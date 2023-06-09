@@ -1,0 +1,22 @@
+<!--<a  style="cursor: pointer"-->
+<!--  class="list-group-item clearfix" (click)="OnSelect()">-->
+
+  <a  style="cursor: pointer" routerLinkActive="active"
+      class="list-group-item clearfix" [routerLink]="[idx]">
+    <!--  href="#"会导致发送请求，进而重新刷新页面-->
+    <div class="pull-left">
+      <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+      <p class="list-group-item-text">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+<!--          property binding-->
+
+      <!--          <img [src]="recipe.image">-->
+      <!--          string interpolation-->
+          <img src="{{recipe.image}}"
+               alt="{{recipe.name}}"
+               class="img-responsive" style="max-height: 50px">
+        </span>
+  </a>
+
+

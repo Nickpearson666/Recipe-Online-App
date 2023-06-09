@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test3';
+  // type:string = "Recipes";
+  //
+  // onNav(event:string){
+  //   this.type = event;
+  // }
 }
